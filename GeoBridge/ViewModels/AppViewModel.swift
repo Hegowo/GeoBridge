@@ -330,14 +330,14 @@ final class AppViewModel: ObservableObject {
         tunnelState = .starting
         log("Starting tunnel daemon — macOS will ask for your admin password…", level: .info)
 
-        // osascript shows a standard macOS auth dialog, then runs the command as root.
-        // '&' detaches tunneld from the shell so osascript returns immediately.
-        let shellCmd    = "\(pmd3) remote tunneld > /tmp/geobridge-tunneld.log 2>&1 &"
-        let appleScript = "do shell script \"\(shellCmd)\" with administrator privileges"
-
         let result = try? await CommandRunner.shared.run(
             executablePath: "/usr/bin/osascript",
-            arguments: ["-e", appleScript],
+            arguments: [
+                "-e", "on run argv",
+                "-e", "do shell script (quoted form of item 1 of argv) & \" remote tunneld > /tmp/geobridge-tunneld.log 2>&1 &\" with administrator privileges",
+                "-e", "end run",
+                pmd3,
+            ],
             timeout: 60
         )
 
