@@ -1,0 +1,10 @@
+.DS_Store
+.build/
+.swiftpm/
+GeoBridge.app/
+GeoBridge.xcodeproj/
+*.xcuserstate
+xcuserdata/
+.claude/
+test.sh
+__pycache__/

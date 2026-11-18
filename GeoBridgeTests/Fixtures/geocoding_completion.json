@@ -1,0 +1,29 @@
+{
+  "status": "OK",
+  "results": [
+    {
+      "fulltext": "8 Boulevard du Port, 95000 Cergy",
+      "x": 2.063755,
+      "y": 49.043782,
+      "classification": 7,
+      "kind": "street",
+      "country": "StreetAddress",
+      "city": "Cergy",
+      "zipcode": "95000",
+      "department": "95",
+      "metropole": true
+    },
+    {
+      "fulltext": "8 Boulevard du Port, 13003 Marseille",
+      "x": 5.370804,
+      "y": 43.306048,
+      "classification": 7,
+      "kind": "street",
+      "country": "StreetAddress",
+      "city": "Marseille",
+      "zipcode": "13003",
+      "department": "13",
+      "metropole": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "version": "draft",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.3469, 48.8595]
+      },
+      "properties": {
+        "label": "Paris",
+        "score": 0.9989,
+        "id": "75056",
+        "type": "municipality",
+        "name": "Paris",
+        "postcode": "75001",
+        "citycode": "75056",
+        "x": 2.3469,
+        "y": 48.8595,
+        "population": 2145906,
+        "city": "Paris",
+        "context": "75, Paris, Île-de-France",
+        "importance": 0.88072,
+        "municipality": "Paris"
+      }
+    }
+  ],
+  "attribution": "BAN",
+  "licence": "ODbL 1.0",
+  "query": "Paris",
+  "limit": 1
+}
